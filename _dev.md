@@ -4,3 +4,5 @@ npx shadcn@latest mcp init --client vscode
 npx shadcn@latest add sidebar-07
 
 git clone https://github.com/wsimmonds/claude-nextjs-skills.git .claude/skills/claude-nextjs-skills
+
+npm install mongodb
