@@ -5,4 +5,5 @@ npx shadcn@latest add sidebar-07
 
 git clone https://github.com/wsimmonds/claude-nextjs-skills.git .claude/skills/claude-nextjs-skills
 
-npm install mongodb
+# npm install mongodb
+npm install mongoose
