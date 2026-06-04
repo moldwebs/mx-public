@@ -4,6 +4,18 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
+## Styling: Tailwind CSS
+
+**All styling must use [Tailwind CSS](https://tailwindcss.com) utility classes.** Do not write custom CSS files, inline `style` props, or CSS-in-JS.
+
+- Apply classes directly on elements: `<div className="flex items-center gap-4 p-6">`
+- Use Tailwind's responsive prefixes for breakpoints: `md:flex-row`, `lg:text-xl`
+- Use `dark:` prefix for dark mode variants
+- Prefer composing utilities over extracting components with `@apply` — only use `@apply` for truly repeated patterns that can't be componentized
+- Do not install or use other styling solutions (styled-components, emotion, CSS modules, etc.)
+
+---
+
 ## UI Components: shadcn/ui Only
 
 **All UI components must use [shadcn/ui](https://ui.shadcn.com).** Do not install or use other component libraries (MUI, Chakra, Radix directly, Ant Design, etc.).
@@ -11,6 +23,7 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 - Import from `@/components/ui/...` (e.g. `import { Button } from '@/components/ui/button'`)
 - If a needed component isn't installed yet, add it with `npx shadcn@latest add <component>`
 - Build composite UI from shadcn primitives — don't hand-roll what shadcn provides
+- shadcn/ui components are pre-styled with Tailwind — extend them with `className` props, not overrides
 
 ---
 
