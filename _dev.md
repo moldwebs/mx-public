@@ -1,4 +1,5 @@
 https://ui.shadcn.com/blocks
+https://www.shadcn.io/examples
 
 npx shadcn@latest init -t next -p auFyyGW --no-monorepo
 
