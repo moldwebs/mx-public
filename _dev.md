@@ -1,4 +1,6 @@
-https://ui.shadcn.com/blocks
+[https://ui.shadcn.com/blocks](https://www.shadcn.io/blocks/crud-list-users)
+
+
 https://www.shadcn.io/examples
 
 npx shadcn@latest init -t next -p auFyyGW --no-monorepo
